@@ -1,4 +1,6 @@
-This is a goLang port of python-zxcvbn and [zxcvbn](https://github.com/dropbox/zxcvbn), which are python and JavaScript password strength
+## zxcvbn-go
+
+This is a Go port of python-zxcvbn and [zxcvbn](https://github.com/dropbox/zxcvbn), which are python and JavaScript password strength
 generators. zxcvbn attempts to give sound password advice through pattern
 matching and conservative entropy calculations. It finds 10k common passwords,
 common American names and surnames, common English words, and common patterns
@@ -18,9 +20,7 @@ For full motivation, see:
 
 https://dropbox.tech/security/zxcvbn-realistic-password-strength-estimation
 
-------------------------------------------------------------------------
-Use
-------------------------------------------------------------------------
+### Use
 
 The zxcvbn module has the public method PasswordStrength() function. Import zxcvbn, and
 call PasswordStrength(password string, userInputs []string).  The function will return a
@@ -52,15 +52,16 @@ site-specific vocabulary.
 
 Bug reports and pull requests welcome!
 
-------------------------------------------------------------------------
-Project Status
-------------------------------------------------------------------------
+### Project Status
 
 Use zxcvbn_test.go to check how close to feature parity the project is.
 
-------------------------------------------------------------------------
-Acknowledgment
-------------------------------------------------------------------------
+### Acknowledgment
+
+This repository is a fork of [nbutton23/zxcvbn-go](https://github.com/nbutton23/zxcvbn-go) and 
+was originally developed by [Nathan Button](https://github.com/nbutton23/). Since Nathan 
+archived the package in their repository, I forked it so I can apply changes further on. 
+Thanks to Nathan for providing this great library.
 
 Thanks to Dan Wheeler (https://github.com/lowe) for the CoffeeScript implementation
 (see above.) To repeat his outside acknowledgements (which remain useful, as always):

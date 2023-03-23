@@ -3,14 +3,14 @@ package matching
 import (
 	"strings"
 
-	"github.com/nbutton23/zxcvbn-go/adjacency"
-	"github.com/nbutton23/zxcvbn-go/entropy"
-	"github.com/nbutton23/zxcvbn-go/match"
+	"github.com/wneessen/zxcvbn-go/adjacency"
+	"github.com/wneessen/zxcvbn-go/entropy"
+	"github.com/wneessen/zxcvbn-go/match"
 )
 
 const spatialMatcherName = "SPATIAL"
 
-//FilterSpatialMatcher can be pass to zxcvbn-go.PasswordStrength to skip that matcher
+// FilterSpatialMatcher can be pass to zxcvbn-go.PasswordStrength to skip that matcher
 func FilterSpatialMatcher(m match.Matcher) bool {
 	return m.ID == spatialMatcherName
 }
